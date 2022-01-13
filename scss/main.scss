@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+table{
+    margin: 100px;
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 20px 40px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.table{
+    &__head{
+        background-color: rgb(67, 68, 68);
+
+        &__row{
+            &__item{
+                color: white;
+            }
+        }
+    }
+
+    &__body{
+        background-color: azure;
+
+        &__row{
+            transition: all 0.15s ease-in-out;
+
+            &:hover{
+                background-color: rgb(231, 225, 225);
+            }
+            
+            /*&:nth-child(2n){
+                background-color: rgb(252, 237, 236);
+            }*/
+
+            &__endItem{
+                font-weight: 700;
+            }
+        }
+    }
+}
